@@ -1,17 +1,16 @@
-import Logo from '../components/home/logo.png';
+import Logo from '../assets/logo.png';
 
-export  default function content() {
-    const contentDiv = document.getElementById('content');
-    //header
+export default function header() {  
+    //***HEADER***
+
+    const headerDiv = document.getElementById('header');
+    const navBar = document.createElement('nav');
 
     // Add the image to our existing div.
     const lingrLogo = new Image();
     lingrLogo.src = Logo;
-    contentDiv.appendChild(lingrLogo);
-
-    const header = document.createElement('header');
-    const navBar = document.createElement('nav');
-    header.appendChild(navBar);
+    headerDiv.appendChild(lingrLogo);
+    headerDiv.appendChild(navBar);
     const navUl = document.createElement('ul');
     navBar.appendChild(navUl); // navigation bar
     const listItems = ['Home', 'Menu', 'Reservations', 'Contact']; //array of list items
@@ -19,14 +18,10 @@ export  default function content() {
         const li = document.createElement('li');
         const link = document.createElement('a');
         link.href = '#';
-        link.innerHTML = listItems[i];
+        link.innerText = listItems[i];
         li.appendChild(link);
         navUl.appendChild(li);
     }
-    contentDiv.appendChild(header);
-
-
-    //append all elements
-
-    return contentDiv;
+    
+    return headerDiv;
 }

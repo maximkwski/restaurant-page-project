@@ -1,7 +1,12 @@
 import './style.css';
-import content from './home.js';
+import header from './components/header.js';
+import home from './components/home.js';
+import footer from './components/footer.js';
 
-content();
+header();
+home();
+footer();
+
 
 
 
