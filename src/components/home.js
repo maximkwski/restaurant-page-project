@@ -21,9 +21,16 @@ export  default function home() {
     hero_a.textContent = "Make a Reservation";
     hero_a.classList.add("btn");
 
+    const address = document.createElement('div');
+    address.classList.add('address');
+    const address_p = document.createElement('p');
+    address_p.innerHTML = "400 6<sup>th</sup> ST. S | ST. PETERSBURG |  727-471-6120";
+    address.appendChild(address_p);
+
     hero.appendChild(hero_h1);
     hero.appendChild(hero_p);
     hero.appendChild(hero_a);
+    hero.appendChild(address);
     mainSection.appendChild(hero);
     
 
@@ -31,6 +38,7 @@ export  default function home() {
     const about = document.createElement('div');
     about.classList.add('about');
     const h2 = document.createElement('h2');
+
     h2.textContent = "Why 'Lingr'?";
     const about_p = document.createElement('p');
     about_p.textContent = `It means 'belonging to,' and 'coming or descending from' — well-expressed definitions for the first
@@ -44,7 +52,23 @@ export  default function home() {
     about.appendChild(about_p);
     mainSection.appendChild(about);
 
-    contentDiv.appendChild(mainSection); //add main section to content div
+    /*HOURS DIV */
+    const hoursDiv = document.createElement('div');
+    hoursDiv.classList.add('hours');
+    const hoursDiv_h3 = document.createElement('h3');
+    hoursDiv_h3.textContent = "Hours";
+    const hoursList = document.createElement('ul');
+    const listItems = ['Sunday - Monday: Closed', 'Tuesday - Thursday: 5-10', 'Friday - Saturday: 5-11'];
+    for (let i = 0; i < listItems.length; i++) {
+        const li = document.createElement('li');
+        li.innerText = listItems[i];
+        hoursList.appendChild(li);
+    }
+    hoursDiv.appendChild(hoursDiv_h3);
+    hoursDiv.appendChild(hoursList);
+    mainSection.appendChild(hoursDiv); //add hours div to main section
+
+    contentDiv.appendChild(mainSection); //add main section to main div
 
     return contentDiv;
 }

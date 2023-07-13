@@ -9,6 +9,7 @@ export default function footer() {
       footer_p1.innerHTML = "&copy; 2023 Lingr. All rights reserved.";
   
       const footer_myDiv = document.createElement('div');
+      footer_myDiv.classList.add('my-info');
       const footerIcon = new Image();
       footerIcon.src = gitIcon; 
       footer_myDiv.innerHTML = "built & designed by";
