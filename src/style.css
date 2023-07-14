@@ -1,3 +1,18 @@
+@font-face {
+    font-family: agdasima;
+    src: url(./fonts/Agdasima-Regular.ttf);
+}
+
+@font-face {
+    font-family: agdasima-bold;
+    src: url(./fonts/Agdasima-Bold.ttf);
+}
+
+@font-face {
+    font-family: roboto;
+    src: url(./fonts/Roboto-Regular.ttf);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -9,15 +24,18 @@ body {
     grid-template-columns: minmax(min-content, 1fr);
     grid-template-rows: minmax(min-content, 1fr) 3fr min-content;
     height: 100vh;
+    font-family: roboto, sans-serif;
 }
 
 /* HEADER */
 header {
     grid-row: 1 / 2;
-    background-color: antiquewhite;
+    background-color: #7fa99b;
 
     display: grid;
     place-items: center;
+    font-family: agdasima;
+    font-size: 1.3em;
 }
 
 header nav {
@@ -26,7 +44,7 @@ header nav {
 
 header nav ul {
     display: flex;
-    gap: 30px;
+    gap: 2em;
 }
 
 header nav ul {
@@ -36,6 +54,11 @@ header nav ul {
 header nav ul li a {
     text-decoration: none;
     color: black;
+}
+
+header nav ul li a:hover,
+header nav ul li a:active {
+    color: white;
 }
 
 /*CONTENT*/
@@ -49,8 +72,8 @@ header nav ul li a {
 footer {
     display: grid;
     place-items: center;
-
-    background-color: rgb(114, 115, 114);
+    font-size: 0.8em;
+    background-color: #394a51d6;
 }
 
 .footer-container {
@@ -58,8 +81,13 @@ footer {
 }
 
 .footer-container a {
-    color: black;
+    color: #7fa99b;
     text-decoration: none;
+}
+
+.footer-container a:hover,
+.footer-container a:active {
+    color: white;
 }
 
 footer .my-info {

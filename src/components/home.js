@@ -1,5 +1,7 @@
 import '../styles/home.css';
-
+import heroJpeg from '../assets/jj14.jpeg';
+import about1 from '../assets/jj28.jpeg';
+import about2 from '../assets/jj34.jpeg';
 
 export  default function home() {
     const contentDiv = document.getElementById('content');
@@ -12,10 +14,15 @@ export  default function home() {
     //hero div
     const hero = document.createElement('div'); 
     hero.classList.add('hero');
+    // const heroPicture = new Image();
+    // heroPicture.src = heroJpeg;
+    // hero.appendChild(heroPicture);
+    const heroContent = document.createElement('div');
+    heroContent.classList.add('hero-content');
     const hero_h1 = document.createElement('h1');
     hero_h1.textContent = "Welcome to Lingr";
     const hero_p = document.createElement('p');
-    hero_p.textContent = "Enjoy the best dining experience";
+    hero_p.textContent = "2022 Best of the Bay Winner for Best New Restaurant and Best Fusion Appetizer";
     const hero_a = document.createElement('a');
     hero_a.href = '#';
     hero_a.textContent = "Make a Reservation";
@@ -24,13 +31,15 @@ export  default function home() {
     const address = document.createElement('div');
     address.classList.add('address');
     const address_p = document.createElement('p');
-    address_p.innerHTML = "400 6<sup>th</sup> ST. S | ST. PETERSBURG |  727-471-6120";
+    address_p.innerHTML = "400 6<sup>th</sup> ST. S  |  ST. PETERSBURG  |  <tel>727-471-6120</tel>";
     address.appendChild(address_p);
 
-    hero.appendChild(hero_h1);
-    hero.appendChild(hero_p);
-    hero.appendChild(hero_a);
+    heroContent.appendChild(hero_h1);
+    heroContent.appendChild(hero_p);
+    heroContent.appendChild(hero_a);
+    hero.appendChild(heroContent);
     hero.appendChild(address);
+    
     mainSection.appendChild(hero);
     
 
@@ -50,6 +59,17 @@ export  default function home() {
     
     about.appendChild(h2);
     about.appendChild(about_p);
+
+    const gallery = document.createElement('div');
+    gallery.classList.add('about-gallery'); 
+    const galleryPic1 = new Image();
+    galleryPic1.src = about1;
+    const galleryPic2 = new Image();
+    galleryPic2.src = about2;
+    gallery.appendChild(galleryPic1);
+    gallery.appendChild(galleryPic2);
+    about.appendChild(gallery);
+
     mainSection.appendChild(about);
 
     /*HOURS DIV */

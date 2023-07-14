@@ -1,8 +1,101 @@
-.main {
-    text-align: center;
+@font-face {
+    font-family: agdasima;
+    src: url(../fonts/Agdasima-Regular.ttf);
 }
 
+.hero {
+    height: 450px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../assets/jj14.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 
+}
+
+.hero-content {
+    background-color: rgba(240, 248, 255, 0.574);
+    width: 330px;
+    height: 330px;
+    text-align: center;
+    line-height: 1.2em;
+    padding: 2.3em;
+    margin-top: 3em;
+    border-radius: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-content h1 {
+    font-family: agdasima;
+    font-size: 2em;
+    padding-top: 0.2em
+}
+
+.hero-content a {
+    color: black;
+    text-transform: uppercase;
+    font-family: agdasima;
+}
+
+.hero-content a:active,
+.hero-content a:hover {
+    color: white;
+}
+
+.hero .address {
+    width: 100%;
+    background-color: #fdc57b;
+    text-align: center;
+    padding: 0.5em;
+    font-size: 1.2em;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+    gap: 2em;
+}
+
+.about h2 {
+    color: #7fa99b;
+    align-items: center;
+}
+
+.about p {
+    width: 75%;
+    text-align: center;
+    line-height: 1.5em;
+}
+
+.about-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5em;
+}
+
+.about-gallery img {
+    width: 300px;
+    border: 2px solid #7fa99b;
+}
+
+.hours {
+    background-color: #fbf2d5;
+    text-align: center;
+    line-height: 1.4em;
+    padding: 1.5em 0;
+    font-family: agdasima;
+    font-size: 1.5em;
+}
 
 .hours ul li {
     text-decoration: none;
