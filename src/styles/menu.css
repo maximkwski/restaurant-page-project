@@ -1,0 +1,36 @@
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1.3em;
+    gap: 2em;
+    padding: 3em;
+    background-color: #fbf2d5;
+    text-align: center;
+}
+
+.menu-container h3 {
+    color: #7fa99b;
+    margin: 0.8em;
+    font-size: 1.4em;
+}
+
+.cocktail-menu ul,
+.dinner-menu ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3em;
+}
+
+.drink-item p:first-child {
+    font-weight: 600;
+    font-size: 1.1em;
+    margin-bottom: 0.3em;
+    text-transform: uppercase;
+}
+
+.drink-item p:last-child {
+    font-style: italic;
+    font-size: 0.9em;
+}

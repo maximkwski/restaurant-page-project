@@ -18,12 +18,18 @@ ul.addEventListener('click', (e) => {
     e.target.classList.add('selected');
     if (e.target.innerHTML === 'Home') {
         console.log('Home');
+        document.querySelector('#content').innerHTML = '';
+        home();
     } else if (e.target.innerHTML === 'Menu') {
         console.log('Menu');
+        document.querySelector('#content').innerHTML = '';
+        menu();
     } else if (e.target.innerHTML === 'Reservations') {
+        document.querySelector('#content').innerHTML = '';
         console.log('Reservations');
     } else {
         console.log('Contact');
+        document.querySelector('#content').innerHTML = '';
     }
 })
 
