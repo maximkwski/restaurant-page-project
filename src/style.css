@@ -99,3 +99,7 @@ footer img {
     width: 15px;
     margin: 0 5px;
 }
+
+.selected {
+    color: white;
+}

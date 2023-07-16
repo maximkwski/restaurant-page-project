@@ -1,4 +1,5 @@
 import Logo from '../assets/logo.png';
+import menu from './menu';
 
 export default function header() {  
     //***HEADER***
@@ -16,12 +17,16 @@ export default function header() {
     const listItems = ['Home', 'Menu', 'Reservations', 'Contact']; //array of list items
     for (let i = 0; i < listItems.length; i++) {
         const li = document.createElement('li');
+        li.id = `${listItems[i]}`
         const link = document.createElement('a');
         link.href = '#';
         link.innerText = listItems[i];
         li.appendChild(link);
         navUl.appendChild(li);
     }
+    
+
+    
     
     return headerDiv;
 }
