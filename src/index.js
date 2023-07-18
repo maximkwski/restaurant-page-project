@@ -3,6 +3,7 @@ import header from './components/header.js';
 import home from './components/home.js';
 import footer from './components/footer.js';
 import menu from './components/menu.js';
+import reservations from './components/reservations.js';
 
 header();
 home();
@@ -26,7 +27,7 @@ ul.addEventListener('click', (e) => {
         menu();
     } else if (e.target.innerHTML === 'Reservations') {
         document.querySelector('#content').innerHTML = '';
-        console.log('Reservations');
+        reservations();
     } else {
         console.log('Contact');
         document.querySelector('#content').innerHTML = '';
