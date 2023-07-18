@@ -4,6 +4,7 @@ import home from './components/home.js';
 import footer from './components/footer.js';
 import menu from './components/menu.js';
 import reservations from './components/reservations.js';
+import contact from './components/contact.js';
 
 header();
 home();
@@ -29,8 +30,8 @@ ul.addEventListener('click', (e) => {
         document.querySelector('#content').innerHTML = '';
         reservations();
     } else {
-        console.log('Contact');
         document.querySelector('#content').innerHTML = '';
+        contact();
     }
 })
 
