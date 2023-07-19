@@ -1,0 +1,48 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2em;
+}
+
+.address-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.2em;
+
+    gap: 1em;
+}
+
+.address-container h3 {
+    color: #7fa99b;
+    font-family: agdasima;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+.hours {
+    width: 100%;
+}
+
+.social-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fdc57b;
+    text-transform: uppercase;
+    font-family: agdasima;
+    margin-bottom: 2em;
+    gap: 8px;
+}
+
+.sm-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.2em;
+}
+
+.sm-icons img {
+    width: 50px;
+}

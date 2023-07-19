@@ -2,6 +2,7 @@ import '../styles/home.css';
 import heroJpeg from '../assets/jj14.jpeg';
 import about1 from '../assets/jj28.jpeg';
 import about2 from '../assets/jj34.jpeg';
+// import reservations from './components/reservations.js';
 
 export  default function home() {
     const contentDiv = document.getElementById('content');
@@ -24,7 +25,7 @@ export  default function home() {
     const hero_p = document.createElement('p');
     hero_p.textContent = "2022 Best of the Bay Winner for Best New Restaurant and Best Fusion Appetizer";
     const hero_a = document.createElement('a');
-    hero_a.href = '#';
+    hero_a.href = "#";
     hero_a.textContent = "Make a Reservation";
     hero_a.classList.add("btn");
 
