@@ -1,8 +1,6 @@
 import '../styles/home.css';
-import heroJpeg from '../assets/jj14.jpeg';
 import about1 from '../assets/jj28.jpeg';
 import about2 from '../assets/jj34.jpeg';
-// import reservations from './components/reservations.js';
 
 export  default function home() {
     const contentDiv = document.getElementById('content');
